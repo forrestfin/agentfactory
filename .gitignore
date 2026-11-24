@@ -1,0 +1,38 @@
+# Worktree-local runtime and parallel checkout state.
+/.runtime/
+/.worktrees/
+/.references/
+
+# Dependencies, generated libraries, builds, and test output.
+**/node_modules/
+**/lib/
+**/dist/
+**/build/
+**/.cache/
+**/.artifacts/
+# Legacy local-only payload; shipped discovery-lab/assets is versioned source.
+/upstream/deepseek-harness/packages/fde/discovery-lab/.assets/
+**/.dsh-build/
+**/coverage/
+**/test-results/
+**/playwright-report/
+
+# Local caches and transient files.
+**/.DS_Store
+**/.pytest_cache/
+**/__pycache__/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.uv-cache/
+*.log
+*.pid
+*.tmp
+
+# Generated recordings and archives.
+**/recordings/
+*.mp4
+*.webm
+*.zip
+*.tar
+*.tgz
+*.tar.gz

@@ -1,0 +1,33 @@
+/* FDE stage roles inherit the current shell theme and retain evidence semantics. */
+[data-fde-stage-workbench][data-stage='evaluation'],
+[data-delivery-workbench] {
+  --dsw-alias-evaluation-on-accent: var(--dsw-alias-label-primary-foreground);
+  --dsw-alias-evaluation-hero-warn: var(--dsw-alias-state-warn-label);
+  --dsw-alias-evaluation-hero-background: var(--dsw-alias-bg-layer-1);
+  --dsw-alias-evaluation-canvas: var(--dsw-alias-bg-base);
+}
+[data-delivery-workbench][data-stage='improvement'] {
+  --dsw-alias-improvement-hero: var(--dsw-alias-bg-layer-1);
+  --dsw-alias-improvement-hero-number: var(--dsw-alias-label-primary);
+  --dsw-alias-improvement-hero-border: var(--dsw-alias-border-l2);
+  --dsw-alias-improvement-gate: var(--dsw-alias-bg-layer-1);
+  --dsw-alias-improvement-gate-border: var(--dsw-alias-state-warn-secondary);
+  --dsw-alias-improvement-review: var(--dsw-alias-state-warn-label);
+}
+[data-delivery-workbench][data-stage='production'] {
+  --dsw-alias-production-hero: var(--dsw-alias-bg-layer-1);
+  --dsw-alias-production-stats: var(--dsw-alias-bg-layer-1);
+  --dsw-alias-production-nav: var(--dsw-alias-bg-layer-2);
+  --dsw-alias-production-on-dark: var(--dsw-alias-label-primary);
+  --dsw-alias-production-muted: var(--dsw-alias-label-secondary);
+  --dsw-alias-production-icon: var(--dsw-alias-state-business-primary);
+  --dsw-alias-production-divider: var(--dsw-alias-border-l2);
+  --dsw-alias-production-archive-bar: var(--dsw-alias-bg-layer-2);
+  --dsw-alias-production-card-header: var(--dsw-alias-bg-layer-2);
+  --dsw-alias-production-gate: var(--dsw-alias-bg-layer-1);
+  --dsw-alias-production-gate-border: var(--dsw-alias-border-l2);
+}
+[data-delivery-workbench][data-stage='pilot'] {
+  --dsw-alias-pilot-hero: var(--dsw-alias-bg-layer-1);
+  --dsw-alias-pilot-hero-muted: var(--dsw-alias-label-secondary);
+}
